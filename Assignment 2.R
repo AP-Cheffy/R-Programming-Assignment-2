@@ -18,7 +18,7 @@ makeCachematrix <- function(x = matrix()){
     list(set = set, get = getfun, setinv = setinversefunc, getinv = getinv)
 }
 
-## The CacheInv takes computes
+## The CacheInv takes checks if the inverse matrix has been calcultated. If 'm' is NOT empty 
 CacheInv <- function(x,...){
     
     m <- x$getinvfunc()
