@@ -32,7 +32,7 @@ CacheInv <- function(x,...){
     ## If "m" is indeed null the computer will calculate the inverse matrix m 
     else{
     xdta <- x$getfun
-    m <-solve(xdta,...)
+    m <-inv(xdta,...)
     x$setinversefunc
     m
     }
